@@ -1,12 +1,12 @@
 <template>
-  <div class="test2">
-    <p>哈哈哈哈哈</p>say：
+  <div class="test3">
+    <p>哈哈哈哈哈3333333333</p>say：
     <mark>{{message}}</mark>
   </div>
 </template>
 <script>
 export default {
-  name: "Test2",
+  name: "TestComponent3",
   setup() {
     const message = "hello vue";
     return {
@@ -16,7 +16,7 @@ export default {
 };
 </script>
 <style lang="scss">
-.test2 {
-  color: rgb(252, 196, 13);
+.test3 {
+  color: rgb(140, 0, 196);
 }
 </style>
