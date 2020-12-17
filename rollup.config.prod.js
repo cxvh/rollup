@@ -20,14 +20,14 @@ module.exports = {
       format: 'umd',
       name: 'cxvhDatav',
       globals: {
-        vue: "vue"
+        vue: "Vue"
       }
     },
     {
       file: outputEsmPath,
       format: 'esm',
       globals: {
-        vue: "vue"
+        vue: "Vue"
       }
     }
   ],

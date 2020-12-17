@@ -5,11 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>cxvhDatav</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.0.0-beta.24/dist/vue.global.js"></script>
   <script src="../dist/cxvh.datav.js"></script>
 </head>
 
 <body>
-
+  <div id="app">
+    {{message}}
+    <test-component></test-component>
+  </div>
+  <script>
+    Vue.createApp({
+      setup() {
+        var message = 'hello baran'
+        return {
+          message
+        }
+      }
+    }).use(cxvhDatav).mount('#app')
+  </script>
 </body>
 
 </html>
