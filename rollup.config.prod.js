@@ -9,8 +9,8 @@ const postcss = require('rollup-plugin-postcss')
 
 const resolve = dir => path.resolve(__dirname, dir)
 const inputPath = resolve('./src/index.js')
-const outputUmdPath = resolve('./dist/cxvh.datav.js')
-const outputEsmPath = resolve('./dist/cxvh.datav.esm.js')
+const outputUmdPath = resolve('./dist/cxvh.datav.min.js')
+const outputEsmPath = resolve('./dist/cxvh.datav.esm.min.js')
 
 module.exports = {
   input: inputPath,
@@ -38,6 +38,7 @@ module.exports = {
     babel({
       exclude: 'node_modules/**'
     }),
+    json(),
     postcss({
       plugins: []
     }),
